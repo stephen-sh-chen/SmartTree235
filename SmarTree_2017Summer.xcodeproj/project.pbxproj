@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B0C2BBE1F7215A500BB4BEB /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C2BBD1F7215A500BB4BEB /* CameraViewController.m */; };
+		0B0C2BC21F72E2A400BB4BEB /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C2BC11F72E2A400BB4BEB /* AboutViewController.m */; };
 		B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7797C611DA4713F001511F7 /* AppDelegate.swift */; };
 		B7797C641DA4713F001511F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7797C631DA4713F001511F7 /* ViewController.swift */; };
 		B7797C671DA4713F001511F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7797C651DA4713F001511F7 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 		0B0C2BBB1F7215A400BB4BEB /* EasyShare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyShare-Bridging-Header.h"; sourceTree = "<group>"; };
 		0B0C2BBC1F7215A500BB4BEB /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		0B0C2BBD1F7215A500BB4BEB /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		0B0C2BC01F72E2A400BB4BEB /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		0B0C2BC11F72E2A400BB4BEB /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		B7797C5E1DA4713F001511F7 /* EasyShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7797C611DA4713F001511F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7797C631DA4713F001511F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 				0B0C2BBD1F7215A500BB4BEB /* CameraViewController.m */,
 				0B0C2BBB1F7215A400BB4BEB /* EasyShare-Bridging-Header.h */,
 				DC3D5CF11F721BFA0051BE18 /* MapViewController.swift */,
+				0B0C2BC01F72E2A400BB4BEB /* AboutViewController.h */,
+				0B0C2BC11F72E2A400BB4BEB /* AboutViewController.m */,
 			);
 			path = EasyShare;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B0C2BBE1F7215A500BB4BEB /* CameraViewController.m in Sources */,
+				0B0C2BC21F72E2A400BB4BEB /* AboutViewController.m in Sources */,
 				B7797C641DA4713F001511F7 /* ViewController.swift in Sources */,
 				DC3D5CF21F721BFA0051BE18 /* MapViewController.swift in Sources */,
 				B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */,

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U0v-8R-4IR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U0v-8R-4IR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -67,6 +67,7 @@
                                 </state>
                                 <connections>
                                     <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RMq-qH-iMx"/>
+                                    <segue destination="7ge-kZ-dfb" kind="show" id="Gk1-BJ-z97"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSP-Qv-VN9">
@@ -148,6 +149,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t34-lG-ngJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-538.39999999999998" y="138.98050974512745"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="JtM-hl-Mqg">
+            <objects>
+                <viewController id="7ge-kZ-dfb" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n06-5F-5Qm"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Fm-tf-WUr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XNv-MS-ByX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tC3-fk-1ZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1452" y="922"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="oHU-xK-jSo">
@@ -264,7 +283,7 @@
                                     <constraint firstAttribute="height" constant="126" id="Or6-eu-nUj"/>
                                     <constraint firstAttribute="width" constant="343" id="YDN-1F-vKB"/>
                                 </constraints>
-                                <mutableString key="text">A pine is any conifer in the genus Pinus, /ˈpiːnuːs/, of the family Pinaceae. Pinus is the sole genus in the subfamily Pinoideae. The Plant List compiled by the Royal Botanic Gardens, Kew and Missouri Botanical Garden accepts 126 species names of pines as current, together with 35 unresolved species and many more synonyms.</mutableString>
+                                <string key="text">A pine is any conifer in the genus Pinus, /ˈpiːnuːs/, of the family Pinaceae. Pinus is the sole genus in the subfamily Pinoideae. The Plant List compiled by the Royal Botanic Gardens, Kew and Missouri Botanical Garden accepts 126 species names of pines as current, together with 35 unresolved species and many more synonyms.</string>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
