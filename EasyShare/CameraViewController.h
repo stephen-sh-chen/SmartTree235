@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CameraViewController : UIViewController
+@interface CameraViewController : UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+- (IBAction)btnAlbum:(id)sender;
+- (IBAction)btnCamera:(id)sender;
 @end

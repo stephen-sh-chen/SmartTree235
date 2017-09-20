@@ -160,20 +160,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3x6-ce-KqS">
-                                <rect key="frame" x="157" y="323" width="60" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLY-GS-aJV">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="sHh-nq-bYV">
+                                        <connections>
+                                            <action selector="btnAlbum:" destination="Lkk-Aq-4Oq" id="QLi-Pn-esh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="bIK-tJ-KeD"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="6MG-5X-MUv"/>
+                                    <barButtonItem systemItem="camera" id="Odt-6T-Fd2">
+                                        <connections>
+                                            <action selector="btnCamera:" destination="Lkk-Aq-4Oq" id="oFD-f5-gUA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YTW-NA-Y8n">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dLY-GS-aJV" secondAttribute="trailing" id="JYz-iJ-LU5"/>
+                            <constraint firstItem="dLY-GS-aJV" firstAttribute="top" secondItem="YTW-NA-Y8n" secondAttribute="bottom" id="MJd-7K-kND"/>
+                            <constraint firstItem="dLY-GS-aJV" firstAttribute="top" secondItem="YTW-NA-Y8n" secondAttribute="bottom" id="bci-xe-3Go"/>
+                            <constraint firstItem="dLY-GS-aJV" firstAttribute="leading" secondItem="zEy-xi-cVP" secondAttribute="leading" id="gkY-Ww-8nN"/>
+                            <constraint firstItem="dLY-GS-aJV" firstAttribute="leading" secondItem="YTW-NA-Y8n" secondAttribute="leading" id="ik8-va-mZX"/>
+                            <constraint firstItem="dLY-GS-aJV" firstAttribute="bottom" secondItem="qGa-vm-Ldi" secondAttribute="top" id="qr1-Ol-oJp"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="top" secondItem="wvI-vJ-PSO" secondAttribute="bottom" id="uAi-v3-A0l"/>
+                            <constraint firstItem="dLY-GS-aJV" firstAttribute="trailing" secondItem="YTW-NA-Y8n" secondAttribute="trailing" id="udS-gC-RfI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="YTW-NA-Y8n" id="beV-64-t0g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qi-fk-fpP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-538" y="922"/>
+            <point key="canvasLocation" x="-538.39999999999998" y="921.58920539730138"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
