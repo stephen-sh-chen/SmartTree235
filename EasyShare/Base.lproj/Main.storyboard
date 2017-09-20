@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U0v-8R-4IR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U0v-8R-4IR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -116,6 +116,7 @@
                                 </state>
                                 <connections>
                                     <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Czz-d3-lHs"/>
+                                    <segue destination="9vY-gc-cnW" kind="show" id="dve-cJ-bHN"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Smart-City-Intro.png" translatesAutoresizingMaskIntoConstraints="NO" id="K4g-ey-6jA">
@@ -201,6 +202,41 @@
             </objects>
             <point key="canvasLocation" x="-538.39999999999998" y="921.58920539730138"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="ST1-Bx-nyb">
+            <objects>
+                <viewController id="9vY-gc-cnW" customClass="MapViewController" customModule="EasyShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p3d-qM-I2O"/>
+                        <viewControllerLayoutGuide type="bottom" id="2w8-sv-X22"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aEe-2k-ixP" customClass="Near">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rjX-py-aLR">
+                                <rect key="frame" x="0.0" y="122" width="375" height="545"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8R2-QC-67w">
+                                <rect key="frame" x="5" y="72" width="365" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressTextfield" destination="8R2-QC-67w" id="JPB-Mv-VrC"/>
+                        <outlet property="mapView" destination="rjX-py-aLR" id="mi1-vR-rRn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvR-Eb-41d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.59999999999999" y="921.58920539730138"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -213,28 +249,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dvE-ao-Rve">
-                                <rect key="frame" x="16" y="122" width="343" height="238"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pine trees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dvE-ao-Rve">
+                                <rect key="frame" x="16" y="80" width="343" height="283"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="238" id="fJ4-Hh-goN"/>
+                                    <constraint firstAttribute="width" constant="343" id="1ss-H7-gj4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="278" id="J4q-No-KDU"/>
+                                    <constraint firstAttribute="height" constant="283" id="wk2-e1-3us"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rG1-2o-mZb">
-                                <rect key="frame" x="16" y="368" width="343" height="91"/>
+                                <rect key="frame" x="16" y="366" width="343" height="126"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="91" id="O3c-Oj-5tJ"/>
+                                    <constraint firstAttribute="height" constant="126" id="Or6-eu-nUj"/>
+                                    <constraint firstAttribute="width" constant="343" id="YDN-1F-vKB"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">A pine is any conifer in the genus Pinus, /ˈpiːnuːs/, of the family Pinaceae. Pinus is the sole genus in the subfamily Pinoideae. The Plant List compiled by the Royal Botanic Gardens, Kew and Missouri Botanical Garden accepts 126 species names of pines as current, together with 35 unresolved species and many more synonyms.</mutableString>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81Q-O9-gdS">
-                                <rect key="frame" x="212" y="443" width="136" height="53"/>
+                                <rect key="frame" x="212" y="507" width="136" height="53"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="vVq-Va-5K8"/>
+                                    <constraint firstAttribute="height" constant="53" id="ows-Lf-LIk"/>
+                                    <constraint firstAttribute="width" constant="136" id="vlU-rO-Nyl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
                                 <state key="normal" title="Twitter">
@@ -245,10 +285,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAs-g2-1oj">
-                                <rect key="frame" x="38" y="443" width="136" height="53"/>
+                                <rect key="frame" x="38" y="507" width="136" height="53"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="fy0-di-hWv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="6qi-9Z-gx7"/>
+                                    <constraint firstAttribute="height" constant="53" id="R8F-Om-Kkx"/>
+                                    <constraint firstAttribute="width" constant="136" id="eWU-ff-SzN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
                                 <state key="normal" title="Facebook">
@@ -259,10 +301,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxF-ib-I0I">
-                                <rect key="frame" x="212" y="504" width="136" height="53"/>
+                                <rect key="frame" x="212" y="568" width="136" height="51"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="r6I-11-P7F"/>
+                                    <constraint firstAttribute="height" constant="51" id="AUO-H8-t9C"/>
+                                    <constraint firstAttribute="width" constant="136" id="J4u-TA-IrY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
                                 <state key="normal" title="SMS">
@@ -273,10 +316,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W33-aN-LGF">
-                                <rect key="frame" x="38" y="504" width="136" height="53"/>
+                                <rect key="frame" x="38" y="568" width="136" height="53"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="UvR-9Q-3Ur"/>
+                                    <constraint firstAttribute="height" constant="53" id="13E-ex-5Fy"/>
+                                    <constraint firstAttribute="width" constant="136" id="hpU-Oc-d6T"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
                                 <state key="normal" title="Email">
@@ -284,20 +328,6 @@
                                 </state>
                                 <connections>
                                     <action selector="email:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYZ-WY-unc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axn-c6-Pdu">
-                                <rect key="frame" x="38" y="577" width="310" height="53"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="1aw-xf-Euk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
-                                <state key="normal" title="Other Options">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="others:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IW7-s7-VFE"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3iy-Qi-KHN">
@@ -313,31 +343,63 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axn-c6-Pdu">
+                                <rect key="frame" x="113" y="620" width="149" height="53"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="NwY-d1-eTe"/>
+                                    <constraint firstAttribute="height" constant="53" id="Q26-a3-afr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
+                                <state key="normal" title="Other Options">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="others:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IW7-s7-VFE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.11130565130234979" green="0.28647836538461535" blue="0.2513544958803145" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="W33-aN-LGF" firstAttribute="top" secondItem="VAs-g2-1oj" secondAttribute="bottom" constant="8" id="2hF-yQ-xGs"/>
-                            <constraint firstItem="axn-c6-Pdu" firstAttribute="top" secondItem="W33-aN-LGF" secondAttribute="bottom" constant="20" id="50Q-1n-lJH"/>
+                            <constraint firstItem="dvE-ao-Rve" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0bZ-7Y-vlP"/>
+                            <constraint firstItem="rG1-2o-mZb" firstAttribute="top" secondItem="dvE-ao-Rve" secondAttribute="bottom" constant="3" id="43O-KR-XsU"/>
+                            <constraint firstItem="rG1-2o-mZb" firstAttribute="top" secondItem="dvE-ao-Rve" secondAttribute="bottom" constant="3" id="5BU-rj-BFZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZxF-ib-I0I" secondAttribute="trailing" constant="11" id="5b8-Va-xHP"/>
-                            <constraint firstItem="axn-c6-Pdu" firstAttribute="top" secondItem="ZxF-ib-I0I" secondAttribute="bottom" constant="20" id="7sO-iT-S7z"/>
+                            <constraint firstItem="dvE-ao-Rve" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5jO-2h-eAF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZxF-ib-I0I" secondAttribute="bottom" constant="48" id="7gf-cW-7zx"/>
                             <constraint firstItem="rG1-2o-mZb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8LP-MP-ywN"/>
-                            <constraint firstItem="dvE-ao-Rve" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="8hh-l0-bu4"/>
-                            <constraint firstItem="W33-aN-LGF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="8ub-Uk-f6M"/>
-                            <constraint firstItem="VAs-g2-1oj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="AWD-WD-hHL"/>
-                            <constraint firstItem="rG1-2o-mZb" firstAttribute="top" secondItem="dvE-ao-Rve" secondAttribute="bottom" constant="8" id="Agw-dL-gaK"/>
+                            <constraint firstItem="VAs-g2-1oj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="9rY-kf-suB"/>
+                            <constraint firstItem="axn-c6-Pdu" firstAttribute="top" secondItem="ZxF-ib-I0I" secondAttribute="bottom" constant="1" id="BJf-1T-gS8"/>
+                            <constraint firstItem="rG1-2o-mZb" firstAttribute="top" secondItem="dvE-ao-Rve" secondAttribute="bottom" constant="3" id="DsZ-53-RHB"/>
+                            <constraint firstItem="W33-aN-LGF" firstAttribute="top" secondItem="VAs-g2-1oj" secondAttribute="bottom" constant="8" id="IpW-UG-kyD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="81Q-O9-gdS" secondAttribute="trailing" constant="11" id="Isg-EB-4KU"/>
+                            <constraint firstItem="81Q-O9-gdS" firstAttribute="top" secondItem="rG1-2o-mZb" secondAttribute="bottom" constant="15" id="Jdb-sl-KIV"/>
+                            <constraint firstAttribute="bottom" secondItem="axn-c6-Pdu" secondAttribute="bottom" constant="-6" id="LrQ-ge-iXh"/>
+                            <constraint firstItem="dvE-ao-Rve" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="M5y-lK-zzL"/>
+                            <constraint firstItem="rG1-2o-mZb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NhM-et-dFh"/>
+                            <constraint firstItem="ZxF-ib-I0I" firstAttribute="top" secondItem="81Q-O9-gdS" secondAttribute="bottom" constant="8" id="Nph-Ej-QSv"/>
+                            <constraint firstAttribute="bottom" secondItem="axn-c6-Pdu" secondAttribute="bottom" constant="-6" id="QJi-Mf-IMV"/>
                             <constraint firstItem="dvE-ao-Rve" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QbU-uA-nj2"/>
-                            <constraint firstItem="ZxF-ib-I0I" firstAttribute="leading" secondItem="W33-aN-LGF" secondAttribute="trailing" constant="38" id="Uqv-aD-DYq"/>
+                            <constraint firstItem="axn-c6-Pdu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UAS-h1-DsV"/>
+                            <constraint firstItem="81Q-O9-gdS" firstAttribute="leading" secondItem="VAs-g2-1oj" secondAttribute="trailing" constant="38" id="VPB-4d-XMS"/>
+                            <constraint firstItem="ZxF-ib-I0I" firstAttribute="leading" secondItem="W33-aN-LGF" secondAttribute="trailing" constant="38" id="VTZ-sQ-NpD"/>
                             <constraint firstItem="dvE-ao-Rve" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Xns-rW-j9u"/>
-                            <constraint firstItem="ZxF-ib-I0I" firstAttribute="top" secondItem="81Q-O9-gdS" secondAttribute="bottom" constant="8" id="dG3-hT-O1i"/>
-                            <constraint firstItem="axn-c6-Pdu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="dGC-Mq-CqW"/>
-                            <constraint firstItem="81Q-O9-gdS" firstAttribute="leading" secondItem="VAs-g2-1oj" secondAttribute="trailing" constant="38" id="dMn-sx-Fzn"/>
                             <constraint firstItem="rG1-2o-mZb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dqX-XE-gJB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="axn-c6-Pdu" secondAttribute="trailing" constant="11" id="kfU-kw-43y"/>
+                            <constraint firstItem="ZxF-ib-I0I" firstAttribute="top" secondItem="81Q-O9-gdS" secondAttribute="bottom" constant="8" id="gZC-Mn-Kuy"/>
+                            <constraint firstItem="81Q-O9-gdS" firstAttribute="leading" secondItem="VAs-g2-1oj" secondAttribute="trailing" constant="38" id="hxh-WJ-50J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZxF-ib-I0I" secondAttribute="trailing" constant="11" id="izL-my-QDz"/>
                             <constraint firstItem="81Q-O9-gdS" firstAttribute="width" secondItem="VAs-g2-1oj" secondAttribute="width" id="m87-g1-eaw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="81Q-O9-gdS" secondAttribute="trailing" constant="11" id="mOi-Fh-MM6"/>
                             <constraint firstItem="ZxF-ib-I0I" firstAttribute="width" secondItem="VAs-g2-1oj" secondAttribute="width" id="o4J-L2-QaF"/>
                             <constraint firstItem="W33-aN-LGF" firstAttribute="width" secondItem="VAs-g2-1oj" secondAttribute="width" id="oEF-gU-Ud5"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="axn-c6-Pdu" secondAttribute="bottom" constant="37" id="xuZ-jh-TOJ"/>
+                            <constraint firstItem="dvE-ao-Rve" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pqu-9d-7m9"/>
+                            <constraint firstItem="VAs-g2-1oj" firstAttribute="top" secondItem="rG1-2o-mZb" secondAttribute="bottom" constant="15" id="rv7-pI-iKe"/>
+                            <constraint firstItem="axn-c6-Pdu" firstAttribute="top" secondItem="ZxF-ib-I0I" secondAttribute="bottom" constant="1" id="tmw-DX-39f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W33-aN-LGF" secondAttribute="bottom" constant="46" id="tpK-hB-FmN"/>
+                            <constraint firstItem="W33-aN-LGF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="vgt-7Z-UP1"/>
+                            <constraint firstItem="W33-aN-LGF" firstAttribute="top" secondItem="VAs-g2-1oj" secondAttribute="bottom" constant="8" id="voE-Bj-4oc"/>
+                            <constraint firstItem="ZxF-ib-I0I" firstAttribute="leading" secondItem="W33-aN-LGF" secondAttribute="trailing" constant="38" id="wda-1N-gsv"/>
+                            <constraint firstAttribute="bottom" secondItem="axn-c6-Pdu" secondAttribute="bottom" constant="-6" id="z8j-1J-Xz0"/>
+                            <constraint firstItem="rG1-2o-mZb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zmr-h5-c5M"/>
                         </constraints>
                     </view>
                     <connections>
@@ -354,6 +416,6 @@
     </scenes>
     <resources>
         <image name="Smart-City-Intro.png" width="3000" height="986"/>
-        <image name="car.jpg" width="1280" height="916"/>
+        <image name="pine trees.jpg" width="1000" height="1000"/>
     </resources>
 </document>
