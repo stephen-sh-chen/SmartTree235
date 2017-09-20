@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U0v-8R-4IR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U0v-8R-4IR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,10 +31,10 @@
             </objects>
             <point key="canvasLocation" x="-1476" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="Mt6-RI-HQ6">
             <objects>
-                <viewController id="sbE-4Q-gmD" sceneMemberID="viewController">
+                <viewController id="sbE-4Q-gmD" customClass="HomeViewController" customModule="EasyShare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Omb-9f-JOu"/>
                         <viewControllerLayoutGuide type="bottom" id="4QJ-Vp-hFw"/>
@@ -87,10 +87,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
-                                <state key="normal" title="Comments">
+                                <state key="normal" title="Rate us">
                                     <color key="titleColor" red="0.1113056513" green="0.28647836539999999" blue="0.25135449589999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="RateUs:" destination="sbE-4Q-gmD" eventType="touchUpInside" id="7ST-fW-r9V"/>
                                     <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ean-wo-1ZM"/>
                                 </connections>
                             </button>
