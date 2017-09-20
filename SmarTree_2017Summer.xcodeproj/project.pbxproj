@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0C2BBE1F7215A500BB4BEB /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C2BBD1F7215A500BB4BEB /* CameraViewController.m */; };
 		B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7797C611DA4713F001511F7 /* AppDelegate.swift */; };
 		B7797C641DA4713F001511F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7797C631DA4713F001511F7 /* ViewController.swift */; };
 		B7797C671DA4713F001511F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7797C651DA4713F001511F7 /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0C2BBB1F7215A400BB4BEB /* EasyShare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyShare-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B0C2BBC1F7215A500BB4BEB /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		0B0C2BBD1F7215A500BB4BEB /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		B7797C5E1DA4713F001511F7 /* EasyShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7797C611DA4713F001511F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7797C631DA4713F001511F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,9 @@
 				B7797C731DA4749D001511F7 /* car.jpg */,
 				B7797C6A1DA4713F001511F7 /* LaunchScreen.storyboard */,
 				B7797C6D1DA4713F001511F7 /* Info.plist */,
+				0B0C2BBC1F7215A500BB4BEB /* CameraViewController.h */,
+				0B0C2BBD1F7215A500BB4BEB /* CameraViewController.m */,
+				0B0C2BBB1F7215A400BB4BEB /* EasyShare-Bridging-Header.h */,
 			);
 			path = EasyShare;
 			sourceTree = "<group>";
@@ -97,12 +104,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Appkoder;
 				TargetAttributes = {
 					B7797C5D1DA4713F001511F7 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8LBEEQERQW;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0C2BBE1F7215A500BB4BEB /* CameraViewController.m in Sources */,
 				B7797C641DA4713F001511F7 /* ViewController.swift in Sources */,
 				B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */,
 			);
@@ -190,6 +199,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -239,6 +249,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -267,11 +278,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8LBEEQERQW;
 				INFOPLIST_FILE = EasyShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.Apptimist.EasyShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyShare/EasyShare-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -281,11 +295,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8LBEEQERQW;
 				INFOPLIST_FILE = EasyShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.Apptimist.EasyShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyShare/EasyShare-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
