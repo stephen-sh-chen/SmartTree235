@@ -16,6 +16,8 @@
 		B7797C741DA4749D001511F7 /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7797C731DA4749D001511F7 /* car.jpg */; };
 		DC3D5CCA1F70D9140051BE18 /* Smart-City-Intro.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3D5CC91F70D9140051BE18 /* Smart-City-Intro.png */; };
 		DC3D5CEE1F7215730051BE18 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3D5CED1F7215730051BE18 /* MapKit.framework */; };
+		DC3D5CF21F721BFA0051BE18 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3D5CF11F721BFA0051BE18 /* MapViewController.swift */; };
+		DC3D5CF41F7234010051BE18 /* pine trees.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC3D5CF31F7234010051BE18 /* pine trees.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		B7797C731DA4749D001511F7 /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
 		DC3D5CC91F70D9140051BE18 /* Smart-City-Intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Smart-City-Intro.png"; sourceTree = "<group>"; };
 		DC3D5CED1F7215730051BE18 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DC3D5CF11F721BFA0051BE18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DC3D5CF31F7234010051BE18 /* pine trees.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pine trees.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +75,14 @@
 				B7797C651DA4713F001511F7 /* Main.storyboard */,
 				B7797C681DA4713F001511F7 /* Assets.xcassets */,
 				DC3D5CC91F70D9140051BE18 /* Smart-City-Intro.png */,
+				DC3D5CF31F7234010051BE18 /* pine trees.jpg */,
 				B7797C731DA4749D001511F7 /* car.jpg */,
 				B7797C6A1DA4713F001511F7 /* LaunchScreen.storyboard */,
 				B7797C6D1DA4713F001511F7 /* Info.plist */,
 				0B0C2BBC1F7215A500BB4BEB /* CameraViewController.h */,
 				0B0C2BBD1F7215A500BB4BEB /* CameraViewController.m */,
 				0B0C2BBB1F7215A400BB4BEB /* EasyShare-Bridging-Header.h */,
+				DC3D5CF11F721BFA0051BE18 /* MapViewController.swift */,
 			);
 			path = EasyShare;
 			sourceTree = "<group>";
@@ -157,6 +163,7 @@
 			files = (
 				DC3D5CCA1F70D9140051BE18 /* Smart-City-Intro.png in Resources */,
 				B7797C6C1DA4713F001511F7 /* LaunchScreen.storyboard in Resources */,
+				DC3D5CF41F7234010051BE18 /* pine trees.jpg in Resources */,
 				B7797C691DA4713F001511F7 /* Assets.xcassets in Resources */,
 				B7797C671DA4713F001511F7 /* Main.storyboard in Resources */,
 				B7797C741DA4749D001511F7 /* car.jpg in Resources */,
@@ -172,6 +179,7 @@
 			files = (
 				0B0C2BBE1F7215A500BB4BEB /* CameraViewController.m in Sources */,
 				B7797C641DA4713F001511F7 /* ViewController.swift in Sources */,
+				DC3D5CF21F721BFA0051BE18 /* MapViewController.swift in Sources */,
 				B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
