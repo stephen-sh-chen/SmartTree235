@@ -14,6 +14,7 @@
 		B7797C6C1DA4713F001511F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7797C6A1DA4713F001511F7 /* LaunchScreen.storyboard */; };
 		B7797C741DA4749D001511F7 /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7797C731DA4749D001511F7 /* car.jpg */; };
 		DC3D5CCA1F70D9140051BE18 /* Smart-City-Intro.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3D5CC91F70D9140051BE18 /* Smart-City-Intro.png */; };
+		DC3D5CEE1F7215730051BE18 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3D5CED1F7215730051BE18 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B7797C6D1DA4713F001511F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7797C731DA4749D001511F7 /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
 		DC3D5CC91F70D9140051BE18 /* Smart-City-Intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Smart-City-Intro.png"; sourceTree = "<group>"; };
+		DC3D5CED1F7215730051BE18 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3D5CEE1F7215730051BE18 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				B7797C601DA4713F001511F7 /* EasyShare */,
 				B7797C5F1DA4713F001511F7 /* Products */,
+				DC3D5CEC1F7215730051BE18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +72,14 @@
 				B7797C6D1DA4713F001511F7 /* Info.plist */,
 			);
 			path = EasyShare;
+			sourceTree = "<group>";
+		};
+		DC3D5CEC1F7215730051BE18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC3D5CED1F7215730051BE18 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +116,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8LBEEQERQW;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
