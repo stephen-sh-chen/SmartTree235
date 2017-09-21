@@ -7,7 +7,6 @@
 //
 
 #import "IndexViewController.h"
-
 @interface IndexViewController ()
 
 @end
@@ -26,20 +25,20 @@
 
 - (IBAction)btnAboutClicked:(id)sender {
     // Create the reader object
-    QRCodeReader *reader = [QRCodeReader readerWithMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
-    
-    // Instantiate the view controller
-    QRCodeReaderViewController *vc = [QRCodeReaderViewController readerWithCancelButtonTitle:@"Cancel" codeReader:_reader startScanningAtLoad:YES showSwitchCameraButton:YES showTorchButton:YES];
-    
-    // Set the presentation style
-    _vc.modalPresentationStyle = UIModalPresentationFormSheet;
-    
-    // Define the delegate receiver
-    _vc.delegate = self;
-    
-    // Or use blocks
-    [_reader setCompletionWithBlock:^(NSString *resultAsString) {
-        NSLog(@"%@", resultAsString);
-    }];
+//    QRCodeReader *reader = [QRCodeReader readerWithMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
+//    
+//    // Instantiate the view controller
+//    QRCodeReaderViewController *vc = [QRCodeReaderViewController readerWithCancelButtonTitle:@"Cancel" codeReader:_reader startScanningAtLoad:YES showSwitchCameraButton:YES showTorchButton:YES];
+//    
+//    // Set the presentation style
+//    _vc.modalPresentationStyle = UIModalPresentationFormSheet;
+//    
+//    // Define the delegate receiver
+//    _vc.delegate = self;
+//    
+//    // Or use blocks
+//    [_reader setCompletionWithBlock:^(NSString *resultAsString) {
+//        NSLog(@"%@", resultAsString);
+//    }];
 }
 @end

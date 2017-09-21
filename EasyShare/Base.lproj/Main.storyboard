@@ -31,12 +31,6 @@
             </objects>
             <point key="canvasLocation" x="-1476" y="139"/>
         </scene>
-<<<<<<< HEAD
-        <!--Index View Controller-->
-        <scene sceneID="Mt6-RI-HQ6">
-            <objects>
-                <viewController id="sbE-4Q-gmD" customClass="IndexViewController" sceneMemberID="viewController">
-=======
         <!--Interact View Controller-->
         <scene sceneID="rV1-sa-i0b">
             <objects>
@@ -59,7 +53,6 @@
         <scene sceneID="Mt6-RI-HQ6">
             <objects>
                 <viewController id="sbE-4Q-gmD" customClass="HomeViewController" customModule="EasyShare" customModuleProvider="target" sceneMemberID="viewController">
->>>>>>> 7604bddd0bcfd919bcc18acb1881e5978af578eb
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Omb-9f-JOu"/>
                         <viewControllerLayoutGuide type="bottom" id="4QJ-Vp-hFw"/>
