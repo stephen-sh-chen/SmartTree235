@@ -31,6 +31,42 @@
             </objects>
             <point key="canvasLocation" x="-1476" y="139"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Zr9-yN-CJI">
+            <objects>
+                <viewController id="SQU-rh-9Ep" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5IW-0p-PE9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vtz-Kv-QQ7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Cv-An-E7r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efD-yq-Bcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-538" y="-1317"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zAE-Lx-YJ5">
+            <objects>
+                <viewController id="iIQ-60-yZq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oF6-QC-iLx"/>
+                        <viewControllerLayoutGuide type="bottom" id="qq0-uV-aRd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LZ3-9K-mXl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cG9-kd-9Dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="-1317"/>
+        </scene>
         <!--Interact View Controller-->
         <scene sceneID="rV1-sa-i0b">
             <objects>
@@ -44,10 +80,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="zKs-n4-3cX" kind="show" identifier="descriptionSegue" id="cCs-lw-LZf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYy-I7-ulF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-538" y="-585"/>
+        </scene>
+        <!--Description View Controller-->
+        <scene sceneID="41u-DO-3Sy">
+            <objects>
+                <viewController id="zKs-n4-3cX" customClass="DescriptionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lwp-0P-zpg"/>
+                        <viewControllerLayoutGuide type="bottom" id="QOu-2B-SHP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yN9-Rj-kT7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2mn-c2-DzH">
+                                <rect key="frame" x="16" y="450" width="343" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Smart Palm provides wireless Internet access to devices in its immediately vicinity via Wi-Fi, has security and emergency features thanks to a 360-degree infrared CCTV camera and accessible Emergency button, comes with solar panels on top of the branches to power the structure and has a touchscreen and smart info application. The device also comes with digital outdoor screens to provide people with more information about the area or for ad placement, and it features relax points and battery recharge stations so people can rest and recharge their devices.</mutableString>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pine trees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0gV-o4-cug">
+                                <rect key="frame" x="16" y="85" width="343" height="357"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ai-XL-Rxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288.80000000000001" y="-585.1574212893554"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Mt6-RI-HQ6">
@@ -88,8 +160,8 @@
                                     <color key="titleColor" red="0.1113056513" green="0.28647836539999999" blue="0.25135449589999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnAboutClicked:" destination="sbE-4Q-gmD" eventType="touchUpInside" id="jvk-NV-zn3"/>
                                     <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RMq-qH-iMx"/>
+                                    <segue destination="gQ5-VF-lxk" kind="show" id="sRP-Pn-b9s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSP-Qv-VN9">
@@ -104,8 +176,7 @@
                                     <color key="titleColor" red="0.1113056513" green="0.28647836539999999" blue="0.25135449589999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4FH-6V-sxl"/>
-                                    <segue destination="gQ5-VF-lxk" kind="show" id="gVS-NT-93f"/>
+                                    <segue destination="gQ5-VF-lxk" kind="show" id="9lY-c5-ci9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqx-WW-j9g">
@@ -120,8 +191,8 @@
                                     <color key="titleColor" red="0.1113056513" green="0.28647836539999999" blue="0.25135449589999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="RateUs:" destination="sbE-4Q-gmD" eventType="touchUpInside" id="7ST-fW-r9V"/>
                                     <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ean-wo-1ZM"/>
+                                    <segue destination="gQ5-VF-lxk" kind="show" id="v1Y-i3-v9O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFl-Ol-yWc">
@@ -582,4 +653,7 @@
         <image name="Smart-City-Intro.png" width="3000" height="986"/>
         <image name="pine trees.jpg" width="1000" height="1000"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sRP-Pn-b9s"/>
+    </inferredMetricsTieBreakers>
 </document>

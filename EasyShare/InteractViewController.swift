@@ -26,6 +26,7 @@ class InteractViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         do {
             videoInput = try AVCaptureDeviceInput(device: videoCaptureDevice)
         } catch {
+            print(error)
             return
         }
         
@@ -82,14 +83,19 @@ class InteractViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
         captureSession.stopRunning()
         
-        if let metadataObject = metadataObjects.first {
-            guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
-            guard let stringValue = readableObject.stringValue else { return }
-            AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
-            found(code: stringValue)
-        }
+//        if let metadataObject = metadataObjects.first {
+//            guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
+//            guard let stringValue = readableObject.stringValue else { return }
+//            AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+//            found(code: stringValue)
+//        }
+//
+//        dismiss(animated: true)
+        let metadataObj = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
         
-        dismiss(animated: true)
+        if metadataObj.type == AVMetadataObjectTypeQRCode {
+            performSegue(withIdentifier: "descriptionSegue", sender: nil)
+        }
     }
     
     func found(code: String) {
