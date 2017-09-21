@@ -10,7 +10,6 @@
 		0B0C2BBE1F7215A500BB4BEB /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C2BBD1F7215A500BB4BEB /* CameraViewController.m */; };
 		0B0C2BC21F72E2A400BB4BEB /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C2BC11F72E2A400BB4BEB /* AboutViewController.m */; };
 		0B0C2BC51F73137A00BB4BEB /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C2BC41F73137A00BB4BEB /* IndexViewController.m */; };
-		0B0C2BC71F73145E00BB4BEB /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0C2BC61F73145E00BB4BEB /* QRCodeReader.framework */; };
 		1DC9BA92F05BE49731469564 /* Pods_EasyShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E3C769BDC91E69765296A6 /* Pods_EasyShare.framework */; };
 		B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7797C611DA4713F001511F7 /* AppDelegate.swift */; };
 		B7797C641DA4713F001511F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7797C631DA4713F001511F7 /* ViewController.swift */; };
@@ -34,7 +33,6 @@
 		0B0C2BC11F72E2A400BB4BEB /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		0B0C2BC31F73137A00BB4BEB /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
 		0B0C2BC41F73137A00BB4BEB /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
-		0B0C2BC61F73145E00BB4BEB /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/SmarTree_2017Summer-durxepyagnzzttcufdpsazglmgnu/Build/Products/Debug-iphonesimulator/QRCodeReader.swift/QRCodeReader.framework"; sourceTree = "<group>"; };
 		32E3C769BDC91E69765296A6 /* Pods_EasyShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7797C5E1DA4713F001511F7 /* EasyShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7797C611DA4713F001511F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,9 +47,9 @@
 		DC3D5CED1F7215730051BE18 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DC3D5CF11F721BFA0051BE18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DC3D5CF31F7234010051BE18 /* pine trees.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pine trees.jpg"; sourceTree = "<group>"; };
-		F34F7B5EC5BBE59B0820A686 /* Pods-EasyShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.debug.xcconfig"; sourceTree = "<group>"; };
 		DC783FCA1F7311A90047C067 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DC783FCC1F7327540047C067 /* InteractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractViewController.swift; sourceTree = "<group>"; };
+		F34F7B5EC5BBE59B0820A686 /* Pods-EasyShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B0C2BC71F73145E00BB4BEB /* QRCodeReader.framework in Frameworks */,
 				DC3D5CEE1F7215730051BE18 /* MapKit.framework in Frameworks */,
 				1DC9BA92F05BE49731469564 /* Pods_EasyShare.framework in Frameworks */,
 			);
@@ -108,7 +105,6 @@
 				0B0C2BC41F73137A00BB4BEB /* IndexViewController.m */,
 				DC783FCA1F7311A90047C067 /* HomeViewController.swift */,
 				DC783FCC1F7327540047C067 /* InteractViewController.swift */,
-
 			);
 			path = EasyShare;
 			sourceTree = "<group>";
@@ -116,7 +112,6 @@
 		DC3D5CEC1F7215730051BE18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0B0C2BC61F73145E00BB4BEB /* QRCodeReader.framework */,
 				DC3D5CED1F7215730051BE18 /* MapKit.framework */,
 				32E3C769BDC91E69765296A6 /* Pods_EasyShare.framework */,
 			);
@@ -399,6 +394,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = CE62RG892N;
 				INFOPLIST_FILE = EasyShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.Apptimist.EasyShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,6 +413,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = CE62RG892N;
 				INFOPLIST_FILE = EasyShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.Apptimist.EasyShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
