@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0B0C2BBE1F7215A500BB4BEB /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C2BBD1F7215A500BB4BEB /* CameraViewController.m */; };
 		0B0C2BC21F72E2A400BB4BEB /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C2BC11F72E2A400BB4BEB /* AboutViewController.m */; };
+		0B0C2BC51F73137A00BB4BEB /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C2BC41F73137A00BB4BEB /* IndexViewController.m */; };
+		0B0C2BC71F73145E00BB4BEB /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0C2BC61F73145E00BB4BEB /* QRCodeReader.framework */; };
+		1DC9BA92F05BE49731469564 /* Pods_EasyShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E3C769BDC91E69765296A6 /* Pods_EasyShare.framework */; };
 		B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7797C611DA4713F001511F7 /* AppDelegate.swift */; };
 		B7797C641DA4713F001511F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7797C631DA4713F001511F7 /* ViewController.swift */; };
 		B7797C671DA4713F001511F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7797C651DA4713F001511F7 /* Main.storyboard */; };
@@ -27,6 +30,10 @@
 		0B0C2BBD1F7215A500BB4BEB /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		0B0C2BC01F72E2A400BB4BEB /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		0B0C2BC11F72E2A400BB4BEB /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		0B0C2BC31F73137A00BB4BEB /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		0B0C2BC41F73137A00BB4BEB /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		0B0C2BC61F73145E00BB4BEB /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/SmarTree_2017Summer-durxepyagnzzttcufdpsazglmgnu/Build/Products/Debug-iphonesimulator/QRCodeReader.swift/QRCodeReader.framework"; sourceTree = "<group>"; };
+		32E3C769BDC91E69765296A6 /* Pods_EasyShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7797C5E1DA4713F001511F7 /* EasyShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7797C611DA4713F001511F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7797C631DA4713F001511F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,10 +42,12 @@
 		B7797C6B1DA4713F001511F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7797C6D1DA4713F001511F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7797C731DA4749D001511F7 /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
+		D7D252D7EB3D2626DBA767F9 /* Pods-EasyShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.release.xcconfig"; sourceTree = "<group>"; };
 		DC3D5CC91F70D9140051BE18 /* Smart-City-Intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Smart-City-Intro.png"; sourceTree = "<group>"; };
 		DC3D5CED1F7215730051BE18 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DC3D5CF11F721BFA0051BE18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DC3D5CF31F7234010051BE18 /* pine trees.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pine trees.jpg"; sourceTree = "<group>"; };
+		F34F7B5EC5BBE59B0820A686 /* Pods-EasyShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0C2BC71F73145E00BB4BEB /* QRCodeReader.framework in Frameworks */,
 				DC3D5CEE1F7215730051BE18 /* MapKit.framework in Frameworks */,
+				1DC9BA92F05BE49731469564 /* Pods_EasyShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +70,7 @@
 				B7797C601DA4713F001511F7 /* EasyShare */,
 				B7797C5F1DA4713F001511F7 /* Products */,
 				DC3D5CEC1F7215730051BE18 /* Frameworks */,
+				E9A7D59B0FDE2AB4CB382D39 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +100,8 @@
 				DC3D5CF11F721BFA0051BE18 /* MapViewController.swift */,
 				0B0C2BC01F72E2A400BB4BEB /* AboutViewController.h */,
 				0B0C2BC11F72E2A400BB4BEB /* AboutViewController.m */,
+				0B0C2BC31F73137A00BB4BEB /* IndexViewController.h */,
+				0B0C2BC41F73137A00BB4BEB /* IndexViewController.m */,
 			);
 			path = EasyShare;
 			sourceTree = "<group>";
@@ -95,9 +109,20 @@
 		DC3D5CEC1F7215730051BE18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B0C2BC61F73145E00BB4BEB /* QRCodeReader.framework */,
 				DC3D5CED1F7215730051BE18 /* MapKit.framework */,
+				32E3C769BDC91E69765296A6 /* Pods_EasyShare.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9A7D59B0FDE2AB4CB382D39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F34F7B5EC5BBE59B0820A686 /* Pods-EasyShare.debug.xcconfig */,
+				D7D252D7EB3D2626DBA767F9 /* Pods-EasyShare.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7797C701DA4713F001511F7 /* Build configuration list for PBXNativeTarget "EasyShare" */;
 			buildPhases = (
+				85F973B9F7F6D042113A5510 /* [CP] Check Pods Manifest.lock */,
 				B7797C5A1DA4713F001511F7 /* Sources */,
 				B7797C5B1DA4713F001511F7 /* Frameworks */,
 				B7797C5C1DA4713F001511F7 /* Resources */,
+				6B07B5C4C9CD5DEFCE5798E0 /* [CP] Embed Pods Frameworks */,
+				DAFE4618213FECDA56BF231B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,6 +205,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6B07B5C4C9CD5DEFCE5798E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85F973B9F7F6D042113A5510 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DAFE4618213FECDA56BF231B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B7797C5A1DA4713F001511F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -187,6 +263,7 @@
 				B7797C641DA4713F001511F7 /* ViewController.swift in Sources */,
 				DC3D5CF21F721BFA0051BE18 /* MapViewController.swift in Sources */,
 				B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */,
+				0B0C2BC51F73137A00BB4BEB /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +384,7 @@
 		};
 		B7797C711DA4713F001511F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F34F7B5EC5BBE59B0820A686 /* Pods-EasyShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -324,6 +402,7 @@
 		};
 		B7797C721DA4713F001511F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7D252D7EB3D2626DBA767F9 /* Pods-EasyShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

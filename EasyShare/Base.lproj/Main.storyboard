@@ -31,10 +31,10 @@
             </objects>
             <point key="canvasLocation" x="-1476" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Index View Controller-->
         <scene sceneID="Mt6-RI-HQ6">
             <objects>
-                <viewController id="sbE-4Q-gmD" sceneMemberID="viewController">
+                <viewController id="sbE-4Q-gmD" customClass="IndexViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Omb-9f-JOu"/>
                         <viewControllerLayoutGuide type="bottom" id="4QJ-Vp-hFw"/>
@@ -66,8 +66,8 @@
                                     <color key="titleColor" red="0.1113056513" green="0.28647836539999999" blue="0.25135449589999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="btnAboutClicked:" destination="sbE-4Q-gmD" eventType="touchUpInside" id="jvk-NV-zn3"/>
                                     <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RMq-qH-iMx"/>
-                                    <segue destination="7ge-kZ-dfb" kind="show" id="Gk1-BJ-z97"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSP-Qv-VN9">
