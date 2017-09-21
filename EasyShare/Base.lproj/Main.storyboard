@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U0v-8R-4IR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U0v-8R-4IR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,10 +31,35 @@
             </objects>
             <point key="canvasLocation" x="-1476" y="139"/>
         </scene>
+<<<<<<< HEAD
         <!--Index View Controller-->
         <scene sceneID="Mt6-RI-HQ6">
             <objects>
                 <viewController id="sbE-4Q-gmD" customClass="IndexViewController" sceneMemberID="viewController">
+=======
+        <!--Interact View Controller-->
+        <scene sceneID="rV1-sa-i0b">
+            <objects>
+                <viewController id="gQ5-VF-lxk" customClass="InteractViewController" customModule="EasyShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4q3-yR-0lL"/>
+                        <viewControllerLayoutGuide type="bottom" id="HGF-TP-MG9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sm6-Ae-FmY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYy-I7-ulF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-538" y="-585"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Mt6-RI-HQ6">
+            <objects>
+                <viewController id="sbE-4Q-gmD" customClass="HomeViewController" customModule="EasyShare" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> 7604bddd0bcfd919bcc18acb1881e5978af578eb
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Omb-9f-JOu"/>
                         <viewControllerLayoutGuide type="bottom" id="4QJ-Vp-hFw"/>
@@ -80,6 +105,7 @@
                                 </state>
                                 <connections>
                                     <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4FH-6V-sxl"/>
+                                    <segue destination="gQ5-VF-lxk" kind="show" id="gVS-NT-93f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqx-WW-j9g">
@@ -87,10 +113,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
-                                <state key="normal" title="Comments">
+                                <state key="normal" title="Rate us">
                                     <color key="titleColor" red="0.1113056513" green="0.28647836539999999" blue="0.25135449589999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="RateUs:" destination="sbE-4Q-gmD" eventType="touchUpInside" id="7ST-fW-r9V"/>
                                     <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ean-wo-1ZM"/>
                                 </connections>
                             </button>
@@ -353,13 +380,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="W6z-Xb-1Zw">
-                                        <barButtonItem key="rightBarButtonItem" title="Share" id="2Tx-wF-P3h">
-                                            <connections>
-                                                <action selector="share:" destination="BYZ-38-t0r" id="joF-p3-w2f"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Title" id="W6z-Xb-1Zw"/>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axn-c6-Pdu">
@@ -377,6 +398,17 @@
                                     <action selector="others:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IW7-s7-VFE"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P8Z-Fq-3Uo">
+                                <rect key="frame" x="0.0" y="624" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="5Da-vy-cwc">
+                                        <connections>
+                                            <action selector="OpenAlbum:" destination="BYZ-38-t0r" id="bjP-hk-Au8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.11130565130234979" green="0.28647836538461535" blue="0.2513544958803145" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -424,7 +456,6 @@
                     <connections>
                         <outlet property="imgView" destination="dvE-ao-Rve" id="aL3-Ow-ZiR"/>
                         <outlet property="otherButton" destination="axn-c6-Pdu" id="mgy-8O-N1G"/>
-                        <outlet property="shareButton" destination="2Tx-wF-P3h" id="l0p-pg-az3"/>
                         <outlet property="textview" destination="rG1-2o-mZb" id="3Km-Ok-Wku"/>
                     </connections>
                 </viewController>

@@ -10,7 +10,8 @@ import UIKit
 import Social
 import MessageUI
 
-class ViewController: UIViewController, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate, UITextViewDelegate {
+class ViewController: UIViewController, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate, UITextViewDelegate, UIImagePickerControllerDelegate,
+UINavigationControllerDelegate {
 
     @IBOutlet weak var imgView: UIImageView!
     
@@ -136,6 +137,23 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate, MFM
         shareVC.popoverPresentationController?.barButtonItem = shareButton
         
         present(shareVC, animated: false)
+    }
+    
+    @IBAction func OpenAlbum(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            var imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary;
+            imagePicker.allowsEditing = true
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        imgView.image = image
+        dismiss(animated:true, completion: nil)
     }
 }
 

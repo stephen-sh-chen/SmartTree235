@@ -22,6 +22,8 @@
 		DC3D5CEE1F7215730051BE18 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3D5CED1F7215730051BE18 /* MapKit.framework */; };
 		DC3D5CF21F721BFA0051BE18 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3D5CF11F721BFA0051BE18 /* MapViewController.swift */; };
 		DC3D5CF41F7234010051BE18 /* pine trees.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC3D5CF31F7234010051BE18 /* pine trees.jpg */; };
+		DC783FCB1F7311A90047C067 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC783FCA1F7311A90047C067 /* HomeViewController.swift */; };
+		DC783FCD1F7327540047C067 /* InteractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC783FCC1F7327540047C067 /* InteractViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +49,12 @@
 		DC3D5CED1F7215730051BE18 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DC3D5CF11F721BFA0051BE18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DC3D5CF31F7234010051BE18 /* pine trees.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pine trees.jpg"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		F34F7B5EC5BBE59B0820A686 /* Pods-EasyShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.debug.xcconfig"; sourceTree = "<group>"; };
+=======
+		DC783FCA1F7311A90047C067 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DC783FCC1F7327540047C067 /* InteractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractViewController.swift; sourceTree = "<group>"; };
+>>>>>>> 7604bddd0bcfd919bcc18acb1881e5978af578eb
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +107,13 @@
 				DC3D5CF11F721BFA0051BE18 /* MapViewController.swift */,
 				0B0C2BC01F72E2A400BB4BEB /* AboutViewController.h */,
 				0B0C2BC11F72E2A400BB4BEB /* AboutViewController.m */,
+<<<<<<< HEAD
 				0B0C2BC31F73137A00BB4BEB /* IndexViewController.h */,
 				0B0C2BC41F73137A00BB4BEB /* IndexViewController.m */,
+=======
+				DC783FCA1F7311A90047C067 /* HomeViewController.swift */,
+				DC783FCC1F7327540047C067 /* InteractViewController.swift */,
+>>>>>>> 7604bddd0bcfd919bcc18acb1881e5978af578eb
 			);
 			path = EasyShare;
 			sourceTree = "<group>";
@@ -263,7 +275,12 @@
 				B7797C641DA4713F001511F7 /* ViewController.swift in Sources */,
 				DC3D5CF21F721BFA0051BE18 /* MapViewController.swift in Sources */,
 				B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				0B0C2BC51F73137A00BB4BEB /* IndexViewController.m in Sources */,
+=======
+				DC783FCB1F7311A90047C067 /* HomeViewController.swift in Sources */,
+				DC783FCD1F7327540047C067 /* InteractViewController.swift in Sources */,
+>>>>>>> 7604bddd0bcfd919bcc18acb1881e5978af578eb
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
