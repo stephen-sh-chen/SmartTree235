@@ -24,11 +24,11 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func RateUs(_ sender: Any) {
-        if #available(iOS 10.3, *) {
-            SKStoreReviewController.requestReview()
-        } else {
-            // Fallback on earlier versions
-        }
+//        if #available(iOS 10.3, *) {
+//            SKStoreReviewController.requestReview()
+//        } else {
+//            // Fallback on earlier versions
+//        }
     }
 
     /*
