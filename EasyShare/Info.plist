@@ -55,5 +55,7 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>App requires your location</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>App requires your microphone</string>
 </dict>
 </plist>

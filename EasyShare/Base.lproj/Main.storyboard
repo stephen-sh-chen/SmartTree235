@@ -67,7 +67,7 @@
                                     <action selector="playAudio:" destination="SQU-rh-9Ep" eventType="touchUpInside" id="ret-jH-0fv"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ash_Tree_-_geograph.org.uk_-_590710.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QtH-16-S7R">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pine trees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QtH-16-S7R">
                                 <rect key="frame" x="16" y="83" width="343" height="345"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -712,7 +712,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Ash_Tree_-_geograph.org.uk_-_590710.jpg" width="480" height="640"/>
         <image name="Smart-City-Intro.png" width="3000" height="986"/>
         <image name="pine trees.jpg" width="1000" height="1000"/>
     </resources>
