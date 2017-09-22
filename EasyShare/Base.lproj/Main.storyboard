@@ -31,10 +31,10 @@
             </objects>
             <point key="canvasLocation" x="-1476" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Voice View Controller-->
         <scene sceneID="Zr9-yN-CJI">
             <objects>
-                <viewController id="SQU-rh-9Ep" sceneMemberID="viewController">
+                <viewController id="SQU-rh-9Ep" customClass="VoiceViewController" customModule="EasyShare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5IW-0p-PE9"/>
                         <viewControllerLayoutGuide type="bottom" id="Vtz-Kv-QQ7"/>
@@ -43,16 +43,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Play Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bi-QX-P1z">
-                                <rect key="frame" x="146" y="323" width="82" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skm-j2-wOa">
+                                <rect key="frame" x="142" y="499" width="91" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Record Voice"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="SQU-rh-9Ep" eventType="touchUpInside" id="fsx-u5-DUr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-kY-lrn">
+                                <rect key="frame" x="171" y="548" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopAudio:" destination="SQU-rh-9Ep" eventType="touchUpInside" id="J1v-Ja-wSa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocd-lN-UP4">
+                                <rect key="frame" x="172" y="598" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playAudio:" destination="SQU-rh-9Ep" eventType="touchUpInside" id="ret-jH-0fv"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ash_Tree_-_geograph.org.uk_-_590710.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QtH-16-S7R">
+                                <rect key="frame" x="16" y="83" width="343" height="345"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="ocd-lN-UP4" id="jcq-T5-QeO"/>
+                        <outlet property="recordButton" destination="Skm-j2-wOa" id="lCF-Rx-pvb"/>
+                        <outlet property="stopButton" destination="wP8-kY-lrn" id="NlQ-6i-SCV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efD-yq-Bcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -686,6 +712,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Ash_Tree_-_geograph.org.uk_-_590710.jpg" width="480" height="640"/>
         <image name="Smart-City-Intro.png" width="3000" height="986"/>
         <image name="pine trees.jpg" width="1000" height="1000"/>
     </resources>
