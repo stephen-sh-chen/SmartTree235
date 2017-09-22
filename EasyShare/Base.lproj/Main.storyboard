@@ -124,7 +124,7 @@
                                 <rect key="frame" x="16" y="450" width="343" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Smart Palm provides wireless Internet access to devices in its immediately vicinity via Wi-Fi, has security and emergency features thanks to a 360-degree infrared CCTV camera and accessible Emergency button, comes with solar panels on top of the branches to power the structure and has a touchscreen and smart info application. The device also comes with digital outdoor screens to provide people with more information about the area or for ad placement, and it features relax points and battery recharge stations so people can rest and recharge their devices.</mutableString>
+                                <string key="text">Smart Palm provides wireless Internet access to devices in its immediately vicinity via Wi-Fi, has security and emergency features thanks to a 360-degree infrared CCTV camera and accessible Emergency button, comes with solar panels on top of the branches to power the structure and has a touchscreen and smart info application. The device also comes with digital outdoor screens to provide people with more information about the area or for ad placement, and it features relax points and battery recharge stations so people can rest and recharge their devices.</string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -431,18 +431,34 @@
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YTW-NA-Y8n">
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="KsG-xD-Sy3"/>
+                                    <constraint firstAttribute="height" constant="559" id="fOt-iO-XiM"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="leading" secondItem="zEy-xi-cVP" secondAttribute="leading" id="28W-gP-WCB"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="top" secondItem="wvI-vJ-PSO" secondAttribute="bottom" id="3yH-Zh-Esl"/>
+                            <constraint firstAttribute="trailing" secondItem="YTW-NA-Y8n" secondAttribute="trailing" id="6Ix-ux-cU0"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="bottom" secondItem="dLY-GS-aJV" secondAttribute="top" id="7RV-7j-9fE"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="top" secondItem="zEy-xi-cVP" secondAttribute="top" constant="64" id="C5Y-En-5sM"/>
                             <constraint firstAttribute="trailing" secondItem="dLY-GS-aJV" secondAttribute="trailing" id="JYz-iJ-LU5"/>
-                            <constraint firstItem="dLY-GS-aJV" firstAttribute="top" secondItem="YTW-NA-Y8n" secondAttribute="bottom" id="MJd-7K-kND"/>
-                            <constraint firstItem="dLY-GS-aJV" firstAttribute="top" secondItem="YTW-NA-Y8n" secondAttribute="bottom" id="bci-xe-3Go"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="leading" secondItem="zEy-xi-cVP" secondAttribute="leading" id="Kdp-y5-kG3"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="leading" secondItem="zEy-xi-cVP" secondAttribute="leading" id="Lje-2J-o35"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="centerX" secondItem="dLY-GS-aJV" secondAttribute="centerX" id="Ner-GL-06h"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="leading" secondItem="zEy-xi-cVP" secondAttribute="leadingMargin" constant="-16" id="Rdx-3W-LxO"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="top" secondItem="wvI-vJ-PSO" secondAttribute="bottom" id="XTb-hu-Rm9"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="trailing" secondItem="dLY-GS-aJV" secondAttribute="trailing" id="Xh3-lY-QRj"/>
                             <constraint firstItem="dLY-GS-aJV" firstAttribute="leading" secondItem="zEy-xi-cVP" secondAttribute="leading" id="gkY-Ww-8nN"/>
-                            <constraint firstItem="dLY-GS-aJV" firstAttribute="leading" secondItem="YTW-NA-Y8n" secondAttribute="leading" id="ik8-va-mZX"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="top" secondItem="zEy-xi-cVP" secondAttribute="top" constant="64" id="oDL-9P-CB3"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="leading" secondItem="dLY-GS-aJV" secondAttribute="leading" id="oyh-UB-ZLr"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="centerX" secondItem="zEy-xi-cVP" secondAttribute="centerX" id="pKr-g2-Wiy"/>
+                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="top" secondItem="zEy-xi-cVP" secondAttribute="topMargin" id="pcA-UD-hrb"/>
                             <constraint firstItem="dLY-GS-aJV" firstAttribute="bottom" secondItem="qGa-vm-Ldi" secondAttribute="top" id="qr1-Ol-oJp"/>
-                            <constraint firstItem="YTW-NA-Y8n" firstAttribute="top" secondItem="wvI-vJ-PSO" secondAttribute="bottom" id="uAi-v3-A0l"/>
-                            <constraint firstItem="dLY-GS-aJV" firstAttribute="trailing" secondItem="YTW-NA-Y8n" secondAttribute="trailing" id="udS-gC-RfI"/>
+                            <constraint firstItem="dLY-GS-aJV" firstAttribute="top" secondItem="YTW-NA-Y8n" secondAttribute="bottom" id="vHt-Wh-vVd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YTW-NA-Y8n" secondAttribute="trailing" constant="-16" id="vJ6-4P-JHM"/>
                         </constraints>
                     </view>
                     <connections>
