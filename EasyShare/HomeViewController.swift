@@ -23,6 +23,12 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.destination is InteractViewController) {
+            let viewController:InteractViewController = (segue.destination as? InteractViewController)!
+            viewController.strNext = segue.identifier
+        }
+    }
     @IBAction func RateUs(_ sender: Any) {
 //        if #available(iOS 10.3, *) {
 //            SKStoreReviewController.requestReview()

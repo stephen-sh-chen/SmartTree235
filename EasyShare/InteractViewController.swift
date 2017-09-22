@@ -12,6 +12,7 @@ import AVFoundation
 class InteractViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
+    var strNext: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +95,13 @@ class InteractViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
         let metadataObj = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
         
         if metadataObj.type == AVMetadataObjectTypeQRCode {
-            performSegue(withIdentifier: "descriptionSegue", sender: nil)
+            if (strNext == "aboutSegue") {
+                performSegue(withIdentifier: "descriptionSegue", sender: nil)
+            } else if (strNext == "interactSegue") {
+                performSegue(withIdentifier: "interactDetailSegue", sender: nil)
+            } else if (strNext == "rateSegue") {
+                performSegue(withIdentifier: "rateDetailSegue", sender: nil)
+            }
         }
     }
     

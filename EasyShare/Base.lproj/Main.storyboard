@@ -42,12 +42,21 @@
                     <view key="view" contentMode="scaleToFill" id="4Cv-An-E7r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Play Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bi-QX-P1z">
+                                <rect key="frame" x="146" y="323" width="82" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efD-yq-Bcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-538" y="-1317"/>
+            <point key="canvasLocation" x="-538.39999999999998" y="-1317.3913043478262"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zAE-Lx-YJ5">
@@ -60,12 +69,21 @@
                     <view key="view" contentMode="scaleToFill" id="LZ3-9K-mXl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBT-JF-5l8">
+                                <rect key="frame" x="166" y="323" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cG9-kd-9Dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="338" y="-1317"/>
+            <point key="canvasLocation" x="336.80000000000001" y="-1317.3913043478262"/>
         </scene>
         <!--Interact View Controller-->
         <scene sceneID="rV1-sa-i0b">
@@ -82,6 +100,8 @@
                     </view>
                     <connections>
                         <segue destination="zKs-n4-3cX" kind="show" identifier="descriptionSegue" id="cCs-lw-LZf"/>
+                        <segue destination="SQU-rh-9Ep" kind="show" identifier="interactDetailSegue" id="mSq-uN-teh"/>
+                        <segue destination="iIQ-60-yZq" kind="show" identifier="rateDetailSegue" id="jCI-eP-TNv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYy-I7-ulF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -161,7 +181,7 @@
                                 </state>
                                 <connections>
                                     <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RMq-qH-iMx"/>
-                                    <segue destination="gQ5-VF-lxk" kind="show" id="sRP-Pn-b9s"/>
+                                    <segue destination="gQ5-VF-lxk" kind="show" identifier="aboutSegue" id="sRP-Pn-b9s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSP-Qv-VN9">
@@ -176,7 +196,7 @@
                                     <color key="titleColor" red="0.1113056513" green="0.28647836539999999" blue="0.25135449589999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gQ5-VF-lxk" kind="show" id="9lY-c5-ci9"/>
+                                    <segue destination="gQ5-VF-lxk" kind="show" identifier="interactSegue" id="9lY-c5-ci9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqx-WW-j9g">
@@ -192,7 +212,7 @@
                                 </state>
                                 <connections>
                                     <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ean-wo-1ZM"/>
-                                    <segue destination="gQ5-VF-lxk" kind="show" id="v1Y-i3-v9O"/>
+                                    <segue destination="gQ5-VF-lxk" kind="show" identifier="rateSegue" id="v1Y-i3-v9O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFl-Ol-yWc">
@@ -360,7 +380,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t34-lG-ngJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-538.39999999999998" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-538" y="194"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="JtM-hl-Mqg">
@@ -654,6 +674,6 @@
         <image name="pine trees.jpg" width="1000" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sRP-Pn-b9s"/>
+        <segue reference="v1Y-i3-v9O"/>
     </inferredMetricsTieBreakers>
 </document>
