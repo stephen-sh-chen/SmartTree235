@@ -44,7 +44,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skm-j2-wOa">
-                                <rect key="frame" x="142" y="499" width="91" height="34"/>
+                                <rect key="frame" x="142" y="473" width="91" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Record Voice"/>
                                 <connections>
@@ -52,25 +52,41 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-kY-lrn">
-                                <rect key="frame" x="171" y="548" width="32" height="30"/>
+                                <rect key="frame" x="142" y="526" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Stop"/>
                                 <connections>
                                     <action selector="stopAudio:" destination="SQU-rh-9Ep" eventType="touchUpInside" id="J1v-Ja-wSa"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pine trees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QtH-16-S7R">
+                                <rect key="frame" x="16" y="83" width="343" height="345"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELk-UF-FgR">
+                                <rect key="frame" x="16" y="617" width="175" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Share with MMS"/>
+                                <connections>
+                                    <action selector="shareWithSms:" destination="SQU-rh-9Ep" eventType="touchUpInside" id="VQV-14-QPW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAC-HT-G3k">
+                                <rect key="frame" x="235" y="617" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Share with Email"/>
+                                <connections>
+                                    <action selector="shareWithEmail:" destination="SQU-rh-9Ep" eventType="touchUpInside" id="8aT-09-H0A"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocd-lN-UP4">
-                                <rect key="frame" x="172" y="598" width="30" height="30"/>
+                                <rect key="frame" x="203" y="526" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="playAudio:" destination="SQU-rh-9Ep" eventType="touchUpInside" id="ret-jH-0fv"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pine trees.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QtH-16-S7R">
-                                <rect key="frame" x="16" y="83" width="343" height="345"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

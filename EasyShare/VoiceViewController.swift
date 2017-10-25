@@ -8,8 +8,19 @@
 
 import UIKit
 import AVFoundation
+import Social
+import MessageUI
 
-class VoiceViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
+class VoiceViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate,MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate, UITextViewDelegate {
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        if result == .cancelled
+        {
+            print("your message was sent successfully")
+        }
+        
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
     var audioPlayer: AVAudioPlayer?
     var audioRecorder: AVAudioRecorder?
     
@@ -90,6 +101,51 @@ class VoiceViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecor
                 print("audioPlayer error: \(error.localizedDescription)")
             }
         }
+    }
+    
+    @IBAction func shareWithSms(_ sender: Any) {
+        if MFMessageComposeViewController.canSendText()
+        {
+            let smsVC = MFMessageComposeViewController()
+            smsVC.messageComposeDelegate = self
+            //smsVC.body = textview.text
+            smsVC.recipients = ["8373837383", "8283930203"]
+            
+            smsVC.addAttachmentURL((audioRecorder?.url)!, withAlternateFilename: "sound.caf")
+            present(smsVC, animated: true)
+        }
+    }
+    
+    @IBAction func shareWithEmail(_ sender: Any) {
+        if MFMailComposeViewController.canSendMail()
+        {
+            let emailVC = MFMailComposeViewController()
+            emailVC.mailComposeDelegate = self
+            emailVC.setSubject("Cool App")
+            emailVC.setToRecipients(["dee@email.com"])
+            emailVC.setMessageBody("Hi Sir,", isHTML: true)
+            
+            if let fileData = NSData(contentsOfFile: (audioRecorder?.url.path)!) {
+                //println("File data loaded.")
+                emailVC.addAttachmentData(fileData as Data, mimeType: "audio/wav", fileName: "swifts")
+            }
+            present(emailVC, animated: true)
+        }
+        else{
+            
+        }
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        
+        if result == .saved
+        {
+            
+        }else if result == .sent{
+            
+        }
+        
+        controller.dismiss(animated: true, completion: nil)
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
