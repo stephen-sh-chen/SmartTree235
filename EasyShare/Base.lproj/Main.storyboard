@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="-538.39999999999998" y="-1317.3913043478262"/>
         </scene>
-        <!--View Controller-->
+        <!--Rate View Controller-->
         <scene sceneID="zAE-Lx-YJ5">
             <objects>
-                <viewController id="iIQ-60-yZq" sceneMemberID="viewController">
+                <viewController id="iIQ-60-yZq" customClass="RateViewController" customModule="EasyShare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oF6-QC-iLx"/>
                         <viewControllerLayoutGuide type="bottom" id="qq0-uV-aRd"/>
@@ -112,18 +112,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBT-JF-5l8">
-                                <rect key="frame" x="166" y="323" width="35" height="21"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Let us your thought..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fcl-pY-DHz">
+                                <rect key="frame" x="27" y="345" width="310" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comments:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ5-9a-5Hv">
+                                <rect key="frame" x="27" y="323" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="y2s-Tn-0dc" appends="YES" id="KLw-Vp-0U4"/>
+                                </connections>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eG-at-e7C">
+                                <rect key="frame" x="300" y="91" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="y2s-Tn-0dc" appends="YES" id="3XE-PA-g9M"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cG9-kd-9Dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="y2s-Tn-0dc"/>
             </objects>
             <point key="canvasLocation" x="336.80000000000001" y="-1317.3913043478262"/>
         </scene>

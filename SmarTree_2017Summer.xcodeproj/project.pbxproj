@@ -26,6 +26,11 @@
 		DC3D5CF41F7234010051BE18 /* pine trees.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC3D5CF31F7234010051BE18 /* pine trees.jpg */; };
 		DC783FCB1F7311A90047C067 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC783FCA1F7311A90047C067 /* HomeViewController.swift */; };
 		DC783FCD1F7327540047C067 /* InteractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC783FCC1F7327540047C067 /* InteractViewController.swift */; };
+		DCDD16761FA066FE0051F157 /* WNRatingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDD16751FA066FD0051F157 /* WNRatingBar.swift */; };
+		DCDD16791FA0688F0051F157 /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDD16781FA0688F0051F157 /* RateViewController.swift */; };
+		DCF40EF01FA0736200CBBFF8 /* star_big1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDD16731FA066FA0051F157 /* star_big1@3x.png */; };
+		DCF40EF11FA0736700CBBFF8 /* star_big2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDD16721FA066FA0051F157 /* star_big2@3x.png */; };
+		DCF40EF21FA0736D00CBBFF8 /* star_big3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDD16741FA066FB0051F157 /* star_big3@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +63,11 @@
 		DC3D5CF31F7234010051BE18 /* pine trees.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pine trees.jpg"; sourceTree = "<group>"; };
 		DC783FCA1F7311A90047C067 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DC783FCC1F7327540047C067 /* InteractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractViewController.swift; sourceTree = "<group>"; };
+		DCDD16721FA066FA0051F157 /* star_big2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_big2@3x.png"; sourceTree = "<group>"; };
+		DCDD16731FA066FA0051F157 /* star_big1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_big1@3x.png"; sourceTree = "<group>"; };
+		DCDD16741FA066FB0051F157 /* star_big3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_big3@3x.png"; sourceTree = "<group>"; };
+		DCDD16751FA066FD0051F157 /* WNRatingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNRatingBar.swift; sourceTree = "<group>"; };
+		DCDD16781FA0688F0051F157 /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		F34F7B5EC5BBE59B0820A686 /* Pods-EasyShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +105,7 @@
 		B7797C601DA4713F001511F7 /* EasyShare */ = {
 			isa = PBXGroup;
 			children = (
+				DCDD16771FA0672B0051F157 /* WNRatingBar */,
 				0B87C4F01FA0636900EE85AB /* GoogleService-Info.plist */,
 				B7797C611DA4713F001511F7 /* AppDelegate.swift */,
 				B7797C631DA4713F001511F7 /* ViewController.swift */,
@@ -120,6 +131,7 @@
 				0B1D6C601F7478F000DFF2F4 /* DescriptionViewController.h */,
 				0B1D6C611F7478F000DFF2F4 /* DescriptionViewController.m */,
 				DC17C3541F7493B3003B3290 /* VoiceViewController.swift */,
+				DCDD16781FA0688F0051F157 /* RateViewController.swift */,
 			);
 			path = EasyShare;
 			sourceTree = "<group>";
@@ -131,6 +143,18 @@
 				32E3C769BDC91E69765296A6 /* Pods_EasyShare.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCDD16771FA0672B0051F157 /* WNRatingBar */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD16731FA066FA0051F157 /* star_big1@3x.png */,
+				DCDD16721FA066FA0051F157 /* star_big2@3x.png */,
+				DCDD16741FA066FB0051F157 /* star_big3@3x.png */,
+				DCDD16751FA066FD0051F157 /* WNRatingBar.swift */,
+			);
+			name = WNRatingBar;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		E9A7D59B0FDE2AB4CB382D39 /* Pods */ = {
@@ -211,6 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF40EF21FA0736D00CBBFF8 /* star_big3@3x.png in Resources */,
+				DCF40EF11FA0736700CBBFF8 /* star_big2@3x.png in Resources */,
+				DCF40EF01FA0736200CBBFF8 /* star_big1@3x.png in Resources */,
 				DC3D5CCA1F70D9140051BE18 /* Smart-City-Intro.png in Resources */,
 				B7797C6C1DA4713F001511F7 /* LaunchScreen.storyboard in Resources */,
 				DC3D5CF41F7234010051BE18 /* pine trees.jpg in Resources */,
@@ -278,9 +305,11 @@
 			files = (
 				0B0C2BBE1F7215A500BB4BEB /* CameraViewController.m in Sources */,
 				0B0C2BC21F72E2A400BB4BEB /* AboutViewController.m in Sources */,
+				DCDD16761FA066FE0051F157 /* WNRatingBar.swift in Sources */,
 				B7797C641DA4713F001511F7 /* ViewController.swift in Sources */,
 				DC3D5CF21F721BFA0051BE18 /* MapViewController.swift in Sources */,
 				B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */,
+				DCDD16791FA0688F0051F157 /* RateViewController.swift in Sources */,
 				DC17C3551F7493B3003B3290 /* VoiceViewController.swift in Sources */,
 				0B0C2BC51F73137A00BB4BEB /* IndexViewController.m in Sources */,
 				DC783FCB1F7311A90047C067 /* HomeViewController.swift in Sources */,
