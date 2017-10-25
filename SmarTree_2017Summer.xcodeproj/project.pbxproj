@@ -11,6 +11,7 @@
 		0B0C2BC21F72E2A400BB4BEB /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C2BC11F72E2A400BB4BEB /* AboutViewController.m */; };
 		0B0C2BC51F73137A00BB4BEB /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0C2BC41F73137A00BB4BEB /* IndexViewController.m */; };
 		0B1D6C621F7478F000DFF2F4 /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1D6C611F7478F000DFF2F4 /* DescriptionViewController.m */; };
+		0B87C4F11FA0636900EE85AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B87C4F01FA0636900EE85AB /* GoogleService-Info.plist */; };
 		1DC9BA92F05BE49731469564 /* Pods_EasyShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E3C769BDC91E69765296A6 /* Pods_EasyShare.framework */; };
 		B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7797C611DA4713F001511F7 /* AppDelegate.swift */; };
 		B7797C641DA4713F001511F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7797C631DA4713F001511F7 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		0B1D6C601F7478F000DFF2F4 /* DescriptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DescriptionViewController.h; sourceTree = "<group>"; };
 		0B1D6C611F7478F000DFF2F4 /* DescriptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DescriptionViewController.m; sourceTree = "<group>"; };
 		0B1D6C631F747D0D00DFF2F4 /* SmartPalm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SmartPalm.jpg; sourceTree = "<group>"; };
+		0B87C4F01FA0636900EE85AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32E3C769BDC91E69765296A6 /* Pods_EasyShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7797C5E1DA4713F001511F7 /* EasyShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7797C611DA4713F001511F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				DCDD16771FA0672B0051F157 /* WNRatingBar */,
+				0B87C4F01FA0636900EE85AB /* GoogleService-Info.plist */,
 				B7797C611DA4713F001511F7 /* AppDelegate.swift */,
 				B7797C631DA4713F001511F7 /* ViewController.swift */,
 				B7797C651DA4713F001511F7 /* Main.storyboard */,
@@ -198,7 +201,7 @@
 				TargetAttributes = {
 					B7797C5D1DA4713F001511F7 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = U7P4P976H4;
+						DevelopmentTeam = CE62RG892N;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -241,6 +244,7 @@
 				B7797C691DA4713F001511F7 /* Assets.xcassets in Resources */,
 				B7797C671DA4713F001511F7 /* Main.storyboard in Resources */,
 				B7797C741DA4749D001511F7 /* car.jpg in Resources */,
+				0B87C4F11FA0636900EE85AB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,11 +439,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = U7P4P976H4;
+				DEVELOPMENT_TEAM = CE62RG892N;
 				INFOPLIST_FILE = EasyShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "smart-tree2";
+				PRODUCT_BUNDLE_IDENTIFIER = "smart-tree3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EasyShare/EasyShare-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -454,11 +458,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = U7P4P976H4;
+				DEVELOPMENT_TEAM = CE62RG892N;
 				INFOPLIST_FILE = EasyShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "smart-tree2";
+				PRODUCT_BUNDLE_IDENTIFIER = "smart-tree3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EasyShare/EasyShare-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
