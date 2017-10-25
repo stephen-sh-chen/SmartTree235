@@ -9,10 +9,12 @@
 import UIKit
 
 class RateTableViewController: UITableViewController {
-
+    var reviews = ["Reveiw 1", "Review 2", "Review 3", "Review 4"];
+    let cellIdentifier = "Cell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         let rightButtonItem = UIBarButtonItem.init(
             title: "Comment",
             style: .plain,
@@ -42,17 +44,19 @@ class RateTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return reviews.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        cell.textLabel?.text = reviews[indexPath.row];
         return cell
     }
 
+    override  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        performSegue(withIdentifier: "createReviewSegue", sender: nil)
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
