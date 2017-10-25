@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2j9-gO-otf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xV8-Kq-uLx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -535,9 +535,6 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="xV8-Kq-uLx" kind="show" id="H91-6l-e1T"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.89052200317382812" green="0.67325031757354736" blue="0.34894153475761414" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -607,7 +604,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7oM-lX-5J8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1488.8" y="-554.57271364317842"/>
+            <point key="canvasLocation" x="-1276" y="-525"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="JtM-hl-Mqg">
@@ -917,7 +914,6 @@
         <image name="pine trees.jpg" width="1000" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GZg-iu-qji"/>
         <segue reference="v1Y-i3-v9O"/>
     </inferredMetricsTieBreakers>
 </document>
