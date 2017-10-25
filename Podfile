@@ -3,5 +3,6 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'EasyShare' do
-pod 'Firebase/Core'    
+pod 'Firebase/Core'
+pod 'Firebase/Database'
 end
