@@ -201,7 +201,7 @@
 				TargetAttributes = {
 					B7797C5D1DA4713F001511F7 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = CE62RG892N;
+						DevelopmentTeam = U7P4P976H4;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -439,11 +439,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = CE62RG892N;
+				DEVELOPMENT_TEAM = U7P4P976H4;
 				INFOPLIST_FILE = EasyShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "smart-tree3";
+				PRODUCT_BUNDLE_IDENTIFIER = "smart-tree2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EasyShare/EasyShare-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -458,11 +458,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = CE62RG892N;
+				DEVELOPMENT_TEAM = U7P4P976H4;
 				INFOPLIST_FILE = EasyShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "smart-tree3";
+				PRODUCT_BUNDLE_IDENTIFIER = "smart-tree2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EasyShare/EasyShare-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
