@@ -26,9 +26,12 @@
 
 #pragma mark - Image Picker Delegate -
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    //NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
     UIImage *chosenImg = info[UIImagePickerControllerOriginalImage];
     self.imageView.image = chosenImg;
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    UIImageWriteToSavedPhotosAlbum(self.imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 }
 
 //Save photos in the album and return message
@@ -37,14 +40,19 @@
     NSString *alertMessage;
     if(error) {
         alertTitle   = @"Error";
-        alertMessage = @"Unable to save to photo album";
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle
-                                                        message:alertMessage
-                                                       delegate:self
-                                              cancelButtonTitle:@"Okay"
-                                              otherButtonTitles:nil];
-        [alert show];
+        alertMessage = @"Unable to save photo in the album";
     }
+    else {
+        alertTitle   = @"Success";
+        alertMessage = @"Photo has been saved successfully";
+    }
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle
+                                                    message:alertMessage
+                                                   delegate:self
+                                          cancelButtonTitle:@"Okay"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
