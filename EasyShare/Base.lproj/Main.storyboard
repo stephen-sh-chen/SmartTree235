@@ -276,7 +276,7 @@
                                 <rect key="frame" x="46" y="350" width="136" height="53"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="136" id="ndA-uW-FC4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="ndA-uW-FC4"/>
                                     <constraint firstAttribute="height" constant="53" id="wBq-B3-9HI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
@@ -486,10 +486,10 @@
             </objects>
             <point key="canvasLocation" x="-538" y="194"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="DIN-pA-PnU">
             <objects>
-                <viewController id="2j9-gO-otf" sceneMemberID="viewController">
+                <viewController id="2j9-gO-otf" customClass="SignUpViewController" customModule="EasyShare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qc3-Zg-rN7"/>
                         <viewControllerLayoutGuide type="bottom" id="BSc-Bk-Qct"/>
@@ -505,7 +505,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xV8-Kq-uLx" kind="show" id="GZg-iu-qji"/>
+                                    <segue destination="xV8-Kq-uLx" kind="show" identifier="loginSegue" id="GZg-iu-qji"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n5Q-j1-Q3I">
@@ -535,20 +535,29 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSignUp:" destination="6Gy-Nh-1Gn" eventType="touchUpInside" id="Hsd-Bk-OXE"/>
+                                    <action selector="btnSignUpClicked:" destination="2j9-gO-otf" eventType="touchUpInside" id="gtQ-br-9Sk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.89052200317382812" green="0.67325031757354736" blue="0.34894153475761414" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="VGX-fO-5Mq"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="n5Q-j1-Q3I" id="z5t-UF-HiF"/>
+                        <outlet property="txtPwd" destination="Gqn-7J-vuS" id="Ptz-5s-R7v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czz-tH-cbC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6Gy-Nh-1Gn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-2232.8000000000002" y="-553.67316341829087"/>
+            <point key="canvasLocation" x="-2570" y="-554"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="ALn-0l-Fy4">
             <objects>
-                <viewController id="xV8-Kq-uLx" sceneMemberID="viewController">
+                <viewController id="xV8-Kq-uLx" customClass="SignInViewController" customModule="EasyShare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fCN-1R-0zF"/>
                         <viewControllerLayoutGuide type="bottom" id="eZC-TN-Gj3"/>
@@ -578,7 +587,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="U0v-8R-4IR" kind="show" id="b5W-f9-u4J"/>
+                                    <action selector="btnLoginClicked:" destination="xV8-Kq-uLx" eventType="touchUpInside" id="K4V-BJ-bhE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV5-yz-MCi">
@@ -595,16 +604,21 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2j9-gO-otf" kind="show" id="lpu-kD-4Pn"/>
+                                    <segue destination="2j9-gO-otf" kind="show" id="g9x-Cv-GT9"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.42150899767875671" green="0.72593051195144653" blue="0.97653555870056152" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="sC4-A5-JQB" id="wFA-Us-QUS"/>
+                        <outlet property="txtPwd" destination="NaI-gy-Jak" id="hoA-bo-ANi"/>
+                        <segue destination="U0v-8R-4IR" kind="presentation" identifier="homeSegue" id="8E3-4e-8cJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7oM-lX-5J8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1276" y="-525"/>
+            <point key="canvasLocation" x="-1452" y="-555"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="JtM-hl-Mqg">

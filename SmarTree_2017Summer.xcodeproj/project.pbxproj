@@ -13,6 +13,8 @@
 		0B1D6C621F7478F000DFF2F4 /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1D6C611F7478F000DFF2F4 /* DescriptionViewController.m */; };
 		0B87C4F11FA0636900EE85AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B87C4F01FA0636900EE85AB /* GoogleService-Info.plist */; };
 		0B87C4F31FA11A3B00EE85AB /* RateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B87C4F21FA11A3B00EE85AB /* RateTableViewController.swift */; };
+		0BF774A91FA99B22009782D2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF774A81FA99B22009782D2 /* SignUpViewController.swift */; };
+		0BF774AD1FA9A7C2009782D2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF774AC1FA9A7C2009782D2 /* SignInViewController.swift */; };
 		1DC9BA92F05BE49731469564 /* Pods_EasyShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E3C769BDC91E69765296A6 /* Pods_EasyShare.framework */; };
 		B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7797C611DA4713F001511F7 /* AppDelegate.swift */; };
 		B7797C641DA4713F001511F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7797C631DA4713F001511F7 /* ViewController.swift */; };
@@ -47,6 +49,8 @@
 		0B1D6C631F747D0D00DFF2F4 /* SmartPalm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SmartPalm.jpg; sourceTree = "<group>"; };
 		0B87C4F01FA0636900EE85AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B87C4F21FA11A3B00EE85AB /* RateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableViewController.swift; sourceTree = "<group>"; };
+		0BF774A81FA99B22009782D2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0BF774AC1FA9A7C2009782D2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		32E3C769BDC91E69765296A6 /* Pods_EasyShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7797C5E1DA4713F001511F7 /* EasyShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7797C611DA4713F001511F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,13 +116,13 @@
 				B7797C611DA4713F001511F7 /* AppDelegate.swift */,
 				B7797C631DA4713F001511F7 /* ViewController.swift */,
 				B7797C651DA4713F001511F7 /* Main.storyboard */,
+				B7797C6A1DA4713F001511F7 /* LaunchScreen.storyboard */,
 				B7797C681DA4713F001511F7 /* Assets.xcassets */,
 				DC3D5CC91F70D9140051BE18 /* Smart-City-Intro.png */,
 				DC3D5CF31F7234010051BE18 /* pine trees.jpg */,
 				0B1D6C631F747D0D00DFF2F4 /* SmartPalm.jpg */,
 				DC17C3531F749379003B3290 /* Ash_Tree_-_geograph.org.uk_-_590710.jpg */,
 				B7797C731DA4749D001511F7 /* car.jpg */,
-				B7797C6A1DA4713F001511F7 /* LaunchScreen.storyboard */,
 				B7797C6D1DA4713F001511F7 /* Info.plist */,
 				0B0C2BBC1F7215A500BB4BEB /* CameraViewController.h */,
 				0B0C2BBD1F7215A500BB4BEB /* CameraViewController.m */,
@@ -135,6 +139,8 @@
 				DC17C3541F7493B3003B3290 /* VoiceViewController.swift */,
 				DCDD16781FA0688F0051F157 /* RateViewController.swift */,
 				0B87C4F21FA11A3B00EE85AB /* RateTableViewController.swift */,
+				0BF774A81FA99B22009782D2 /* SignUpViewController.swift */,
+				0BF774AC1FA9A7C2009782D2 /* SignInViewController.swift */,
 			);
 			path = EasyShare;
 			sourceTree = "<group>";
@@ -314,6 +320,8 @@
 				B7797C621DA4713F001511F7 /* AppDelegate.swift in Sources */,
 				0B87C4F31FA11A3B00EE85AB /* RateTableViewController.swift in Sources */,
 				DCDD16791FA0688F0051F157 /* RateViewController.swift in Sources */,
+				0BF774AD1FA9A7C2009782D2 /* SignInViewController.swift in Sources */,
+				0BF774A91FA99B22009782D2 /* SignUpViewController.swift in Sources */,
 				DC17C3551F7493B3003B3290 /* VoiceViewController.swift in Sources */,
 				0B0C2BC51F73137A00BB4BEB /* IndexViewController.m in Sources */,
 				DC783FCB1F7311A90047C067 /* HomeViewController.swift in Sources */,

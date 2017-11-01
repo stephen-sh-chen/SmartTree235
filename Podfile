@@ -5,4 +5,5 @@ use_frameworks!
 target 'EasyShare' do
 pod 'Firebase/Core'
 pod 'Firebase/Database'
+pod 'Firebase/Auth'
 end
